@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
+
+body{
+	color: #FFE2C6;
+	font-size: 1.4em;
+
+	background-color: #230000;
+	font-family: 'Frank Ruhl Libre', serif;
+	width: 99%;
+}
+
+body::-webkit-scrollbar {
+  width: 0.1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #A54932;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+ul#links {
+	border: medium double #E18866;
+	text-align: center;
+}
+
+ul#links li {
+	background-color: #712F30;
+	font-size: 20px;
+
+	display: inline-block;
+    margin: 20px auto;
+    padding: 5px 40px 5px 40px;
+	border: medium ridge #A54932;
+	border-radius: 5px;
+}
+
+
+a {
+	color: #230000;
+}
+
+a:visited{
+	color: white;
+	border-style: groove;
+}
+
+h1.name {
+	margin-right: auto;
+	margin-left: auto;
+	width: 440px;
+	font-size: 50PX;
+}
+
+h1 {
+	margin-left: 5%;
+	font-size: 50px;
+}
+
+h2 {
+	margin-right: auto;
+	margin-left: auto;
+	width: 90px;
+	font-size: 20px;
+	color: #E18866;
+}
+
+h2.status {
+	margin-left: 2%;
+	margin-right: auto;
+	margin-bottom: 50px;
+	width: 600px;
+	font-size: 20px;
+	color: #E18866;
+}
+
+.aParent div{
+	float: left;
+	padding: 20px;
+}
+
+div#pic {
+	float: right;
+} 
+
+img {
+	margin: auto;
+	display: block;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 70%; /* Width of new image */
+	height: 70%; /* Height of new image */
+}
+
+ol#container{
+	text-align: left;
+}
+
+li.infoItem{
+	display: inline-block;
+    margin: 20px auto;
+    padding: 5px 40px 5px 40px;
+}
+
+table#exp {
+	 width: 100%;
+}
+
+table#exp tbody tr.infoCells td {
+	border: 1px solid #E18866;
+	padding: 1em 2em;
+}
+
+table#exp td.heads {
+	background-color: #712F30;
+}
+
+table#exp td#null {
+	border: none;
+}
+
+td.cellTitle {
+	text-align: center;
+	font-size: 25px;
+	background-color: #712F30;
+}
+
+ul#comp	{
+	text-align: center;
+}
+
+ul#comp li{
+	color: pink;
+	font-size: 20px;
+
+	border-right: 1px double #E18866;
+	border-left:  1px double #E18866;
+	border-radius: 20px;
+	padding: 2% 30px;
+	margin-left: 10px; 
+	margin-right: 10px;
+}
+
+
+
+.contact-us {
+	padding: 2% 2%;
+	border-top: 10px solid #f45702;
+}
+
+label, input, textarea {
+	display: block;
+	width: 30%;
+	font-size: 12pt;
+	line-height: 24pt;
+	font-family: "Spartan";
+}
+
+input {
+	margin-bottom: 10pt;
+}
+
+input, textarea {
+	border: none;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+	padding-left: 5px;
+	outline: none;
+	background-color: #FFE2C6;
+}
+
+input:focus, textarea:focus {
+	border: 1px solid red;
+	background-color: #FFE2C6;
+}
+
+textarea {
+	resize: none;
+}
+
+textarea::-webkit-scrollbar {
+    width: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: darkred;
+  outline: 1px solid slategrey;
+}
+
+button {
+	margin: 10px;
+	display: block;
+	float: left;
+	line-height: 24pt;
+	padding: 0 20px;
+	border: none;
+	background: #f45702;
+	color: white;
+	letter-spacing: 2px;
+	transition: 0.2s all ease-in-out;
+	border-bottom: 2px solid transparent;
+	outline: none;
+}
+button:hover {
+	background: inherit;
+	color: #f45702;
+	border-bottom: 2px solid #f45702;
+}
+
+::selection {
+  background: #ffc7b8;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+	border: 1px solid #6bd4b1;
+	-webkit-text-fill-color: #2A293E;
+	-webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+	transition: background-color 5000s ease-in-out 0s;
+}
