@@ -2,11 +2,11 @@
 
 body{
 	color: #FFE2C6;
-	font-size: 1.4em;
-
+	font-size: 3vw;
+	margin:0px;
 	background-color: #230000;
 	font-family: 'Frank Ruhl Libre', serif;
-	width: 99%;
+	width: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -24,12 +24,14 @@ body::-webkit-scrollbar-thumb {
 
 ul#links {
 	border: medium double #E18866;
-	text-align: center;
+	text-align: center; 
+	margin: 0px 10px;
+	padding: 5px;
 }
 
 ul#links li {
 	background-color: #712F30;
-	font-size: 20px;
+	font-size: 4vw;
 
 	display: inline-block;
     margin: 20px auto;
@@ -49,40 +51,41 @@ a:visited{
 }
 
 h1.name {
-	margin-right: auto;
-	margin-left: auto;
-	width: 440px;
-	font-size: 50PX;
+	margin: 1%;
+	text-align: center;
+	font-size: 7vw;
 }
 
 h1 {
 	margin-left: 5%;
-	font-size: 50px;
+	font-size: 7vw;
 }
 
-h2 {
+h2#etudiant{
 	margin-right: auto;
 	margin-left: auto;
-	width: 90px;
-	font-size: 20px;
+	text-align: center;
+	font-size: 5vw;
 	color: #E18866;
 }
 
-h2.status {
-	margin-left: 2%;
-	margin-right: auto;
-	margin-bottom: 50px;
-	width: 600px;
-	font-size: 20px;
+.status {
+	font-size: 3vw;
 	color: #E18866;
 }
 
 .aParent div{
+	margin-left: 1%;
 	float: left;
-	padding: 20px;
+	width: 49%;
+}
+
+p {
+	font-size: 2vw;
 }
 
 div#pic {
+	width: 49%;
 	float: right;
 } 
 
