@@ -2,7 +2,7 @@
 
 body{
 	color: #FFE2C6;
-	font-size: 3vw;
+	font-size: 1vw;
 	margin:0px;
 	background-color: #230000;
 	font-family: 'Frank Ruhl Libre', serif;
@@ -31,10 +31,10 @@ ul#links {
 
 ul#links li {
 	background-color: #712F30;
-	font-size: 4vw;
+	font-size: 1vw;
 
 	display: inline-block;
-    margin: 20px auto;
+    margin: 2% auto;
     padding: 5px 40px 5px 40px;
 	border: medium ridge #A54932;
 	border-radius: 5px;
@@ -52,25 +52,25 @@ a:visited{
 
 h1.name {
 	margin: 1%;
+	margin-top: 5%;
 	text-align: center;
-	font-size: 7vw;
+	font-size: 5vw;
 }
 
 h1 {
 	margin-left: 5%;
-	font-size: 7vw;
+	font-size: 3vw;
 }
 
 h2#etudiant{
-	margin-right: auto;
-	margin-left: auto;
+	margin: 5px auto;
 	text-align: center;
-	font-size: 5vw;
+	font-size: 3vw;
 	color: #E18866;
 }
 
 .status {
-	font-size: 3vw;
+	font-size: 2vw;
 	color: #E18866;
 }
 
@@ -81,7 +81,7 @@ h2#etudiant{
 }
 
 p {
-	font-size: 2vw;
+	font-size: 1vw;
 }
 
 div#pic {
@@ -94,18 +94,19 @@ img {
 	display: block;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	width: 70%; /* Width of new image */
-	height: 70%; /* Height of new image */
+	width: 70%; 
+	height: 70%;
 }
 
 ol#container{
 	text-align: left;
+	padding: 5px 1%;
 }
 
 li.infoItem{
 	display: inline-block;
-    margin: 20px auto;
-    padding: 5px 40px 5px 40px;
+    margin: 5px auto;
+    padding: 5px 1%;
 }
 
 table#exp {
@@ -119,6 +120,7 @@ table#exp tbody tr.infoCells td {
 
 table#exp td.heads {
 	background-color: #712F30;
+	font-size: 2vw;
 }
 
 table#exp td#null {
@@ -127,26 +129,29 @@ table#exp td#null {
 
 td.cellTitle {
 	text-align: center;
-	font-size: 25px;
+	font-size: 2vw;
 	background-color: #712F30;
 }
 
 ul#comp	{
 	text-align: center;
+	padding: 10px 0px;
 }
 
 ul#comp li{
-	color: pink;
-	font-size: 20px;
-
+	font-size: 2vw;
 	border-right: 1px double #E18866;
 	border-left:  1px double #E18866;
 	border-radius: 20px;
 	padding: 2% 30px;
 	margin-left: 10px; 
 	margin-right: 10px;
+	list-style-type: none;
 }
 
+div.diver {
+	margin: auto 10px;
+}
 
 
 .contact-us {
@@ -162,9 +167,6 @@ label, input, textarea {
 	font-family: "Spartan";
 }
 
-input {
-	margin-bottom: 10pt;
-}
 
 input, textarea {
 	border: none;
