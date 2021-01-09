@@ -22,25 +22,6 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid slategrey;
 }
 
-ul#links {
-	border: medium double #E18866;
-	text-align: center; 
-	margin: 0px 10px;
-	padding: 5px;
-}
-
-ul#links li {
-	background-color: #712F30;
-	font-size: 1vw;
-
-	display: inline-block;
-    margin: 2% auto;
-    padding: 5px 40px 5px 40px;
-	border: medium ridge #A54932;
-	border-radius: 5px;
-}
-
-
 a {
 	color: #230000;
 }
@@ -69,48 +50,43 @@ h2#etudiant{
 	color: #E18866;
 }
 
-.status {
-	font-size: 2vw;
-	color: #E18866;
+ul#cont{
 }
 
-.aParent div{
-	margin-left: 1%;
-	float: left;
-	width: 49%;
-}
-
-p {
+li#p {
+	display: inline-block;
+	width: 50%;
 	font-size: 1vw;
 }
 
-div#pic {
-	width: 49%;
-	float: right;
-} 
+li#img{
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+}
 
 img {
-	margin: auto;
-	display: block;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	width: 70%; 
-	height: 70%;
+	width: 50%;
+	border: 1px solid #E18866;
+	border-radius: 4px;
+	padding: 5px;
 }
 
 ol#container{
 	text-align: left;
 	padding: 5px 1%;
+	font-size: 1.5em;
+	margin: auto 10%; 
 }
 
 li.infoItem{
-	display: inline-block;
     margin: 5px auto;
     padding: 5px 1%;
 }
 
 table#exp {
-	 width: 100%;
+	 width: 80%;
+	 margin: 20px auto; 
 }
 
 table#exp tbody tr.infoCells td {
@@ -149,19 +125,27 @@ ul#comp li{
 	list-style-type: none;
 }
 
+
 div.diver {
-	margin: auto 10px;
+	font-size: 1.5vw;
+	margin: auto 10%;
+	padding-top: 30px; 
+	width: 80%;
+	display: block;
 }
 
-
 .contact-us {
+	margin: 20px auto;
+	display: block;
+	width: 80%;
 	padding: 2% 2%;
 	border-top: 10px solid #f45702;
 }
 
 label, input, textarea {
 	display: block;
-	width: 30%;
+	width: 100%;
+	max-width: 500px;
 	font-size: 12pt;
 	line-height: 24pt;
 	font-family: "Spartan";
@@ -233,4 +217,127 @@ textarea:-webkit-autofill:focus {
 	-webkit-text-fill-color: #2A293E;
 	-webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
 	transition: background-color 5000s ease-in-out 0s;
+}
+
+
+footer {
+	margin-top: 80px;
+	margin-bottom: 40px;
+	position: relative;
+
+	color:#4b4c4d;
+	bottom: 100;
+	width:100%;
+}
+
+.social {
+  text-align:center;
+  padding-bottom:5px;
+}
+
+.social > a {
+  font-size: 1em;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.social > a:hover {
+  opacity:0.9;
+}
+
+.copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:0.8vw;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+/************************************/
+
+nav ul {
+
+	border: medium double #E18866;
+	text-align: center; 
+	margin: 0px 10px;
+	padding: 5px;
+}
+
+nav ul li.mainItem {
+
+	background-color: #712F30;
+	font-size: 1vw;
+
+	display: inline-block;
+    margin: 2% auto;
+    padding: 5px 40px 5px 40px;
+	border: medium ridge #A54932;
+	border-radius: 5px;
+
+	position: relative;
+	transition-duration: 0.5s;
+}
+  
+nav li a {
+  color: #E18866;
+  text-decoration: none;
+}
+
+nav li ul li:hover a{
+	color: #000;
+	transition: 0.5s ease;
+}
+
+nav li:hover,
+nav li:focus-within {
+  background: #E18866;
+  cursor: pointer;
+  transition: 0.5s ease; 
+}
+
+nav li:focus-within a {
+  outline: none;
+}
+
+nav ul li ul {
+	border: none;
+	background: transparent;
+	visibility: hidden;
+	min-width: 5rem;
+	position: absolute;
+	transition: all 0.5s ease;
+	margin-top: 5px;
+	left: 0;
+	display: none;
+}
+
+nav ul li:hover > ul,
+nav ul li:focus-within > ul,
+nav ul li ul:hover,
+nav ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+nav ul li ul li {
+	clear: both;
+	width: 100%;
+	background-color: #712F30;
+	font-size: 1vw;
+
+	display: inline-block;
+	margin: 2% auto;
+    padding: auto;
+	border: medium ridge #A54932;
+	border-radius: 5px;
+
 }

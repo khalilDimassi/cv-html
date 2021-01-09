@@ -7,33 +7,55 @@
 	<title>Curriculum Vitae</title>
 
 	<link rel="stylesheet" type="text/css" href="CV.css">
-	<script src="/script.js"></script>
+	<script src="Script/CV.js"></script>
 </head>
 <body>
 	<h1 class="name"> Khalil Allah Dimassi </h1>
 	<h2 id="etudiant">-Etudiant-</h2>
-	<ul id="links">
-	    <li><a href="index.html">Présentation</a></li>
-	    <li><a href="formation.html">Formation</a></li>
-	    <li><a href="experience.html">Expérience</a></li>
-	    <li><a href="competances.html">Compétences</a></li>
-	    <li><a href="divers.html">Divers</a></li>
-	    <li><a href="contact.html">Contact</a></li>
-	</ul>
-
-	
+	<nav role="navigation">
+		<ul>
+		    <li class="mainItem"><a href="index.html"       aria-haspopup="true">Présentation</a></li>
+		    <li class="mainItem"><a href="formation.html"   aria-haspopup="true">Formation</a>
+				<ul aria-label="submenu">
+					<li><a href="formation.html#AI">artificial intelligence</a></li>
+					<li><a href="formation.html#ML">Machine Learning</a></li>
+					<li><a href="formation.html#GD">Game Developement</a></li>
+				</ul>
+			</li>
+		    <li class="mainItem"><a href="experience.html"  aria-haspopup="true">Expérience</a></li>
+		    <li class="mainItem"><a href="competances.html" aria-haspopup="true">Compétences</a></li>
+		    <li class="mainItem"><a href="divers.html"      aria-haspopup="true">Divers</a>
+		    	<ul aria-label="submenu">
+					<li><a href="divers.html#Int">interests</a></li>
+					<li><a href="divers.html#PP">Programming platforms</a></li>	
+				</ul>
+			</li>
+		    <li class="mainItem"><a href="contact.html"     aria-haspopup="true">Contact</a></li>
+		</ul>
+	</nav>
 
 	<h1>PAGE INDEX</h1>
 	<br> 	
-	<div class="aParent">
-		<div>
-		    <h2 class="status">Etat civil : celibataire </h2>
-		    <h2 class="status">Adresse : Nabeul, Nabel Rue Mohammed Ikbel </h2>
+
+	<ul id="cont">
+		<li id="p">
 		    <p> Je m'appelle <b> Khalil Allah Dimassi </b>, <em>étudiant</em> en 3éme année LFSI à l'ISSATSO.</p>
-	    </div>
-	    <div id="pic">
+		    <p><b>Etat civil: </b> celibataire </p>
+		    <p><b>Adresse: </b> Nabeul, Nabel Rue Mohammed Ikbel </p>			
+		</li>
+		<li id="img">
 	    	<img src="pics/me.png" alt="Khalil picture">
-	    </div>
-	</div>
+		</li>
+	</ul>
+
+    <footer>
+            <div class="social">
+            	<a href="#"><i class="icon ion-social-instagram"></i></a>
+            	<a href="#"><i class="icon ion-social-snapchat"></i></a>
+            	<a href="#"><i class="icon ion-social-twitter"></i></a>
+            	<a href="#"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <p class="copyright">khalil allah dimassi © 2021</p>
+    </footer>
 </body>
 </html>
